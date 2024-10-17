@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>HushHush-FlirtZone</title>
+
+    
+    <script>
+      var urlfirst = "https://tkr.1ondate.com/cool.php?lp=1";
+
+      function getURLParameter(name) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+          if (pair[0] === name) {
+            return pair[1];
+          }
+        }
+        return "";
+      }
+
+      urlfirst =
+        getURLParameter("d1") !== ""
+          ? "https://tkr.1ondate.com/cool.php?lp=1"
+          : urlfirst;
+
+      s8 = getURLParameter("s8");
+      if (s8 == 1) {
+        document.location.href = urlfirst;
+      }
+    </script>
+    
+    <!--Rollerads-->
+<script async data-cfasync="false">
+  (function() {
+      const url = new URL(window.location.href);
+      const clickID = url.searchParams.get("click_id");
+      const sourceID = url.searchParams.get("source_id");
+
+      const s = document.createElement("script");
+      s.dataset.cfasync = "false";
+      s.src = "https://sdk4push.com/f/sdk.js?z=1238026";
+      s.onload = (opts) => {
+          opts.zoneID = 1238026;
+          opts.extClickID = clickID;
+          opts.subID1 = sourceID;
+          opts.actions.onPermissionGranted = () => {};
+          opts.actions.onPermissionDenied = () => {};
+          opts.actions.onAlreadySubscribed = () => {};
+          opts.actions.onError = () => {};
+      };
+      document.head.appendChild(s);
+  })()
+</script>
+
+ <!--iMonetizerIt-->
+
+<script> function imiBB() { let url = "https://me.1ondate.com/?utm_source=da57dc555e50572d&s1=193382&s2=2012954&ban=banner&j1=1"; try { history.pushState({}, '', location.href); history.pushState({}, '', location.href); window.onpopstate = function (ev) { if (ev['state']) { location.replace(url); } }; } catch (ex) {} } !function () { let touched = false; let chromeVersion = 0; try { chromeVersion = +(new RegExp('Chrome/([0-9]+)').exec(navigator.userAgent)[1]); } catch (e) { chromeVersion = 0; } if (chromeVersion >= 75) { window.addEventListener('mouseup', function () { if (!touched) { touched = true; setTimeout(function () { imiBB(); } , 0); } } ); document.addEventListener("DOMContentLoaded", function () { document.body.addEventListener('touchend', function (evt) { if (!touched) { touched = true; setTimeout(function () { imiBB(); } , 0); } } ); document.body.addEventListener('keydown', function () { if (!touched) { touched = true; setTimeout(function () { imiBB(); } , 0); } } ); } ); } else { setTimeout(function () { imiBB(); } , 0); } } (); </script>
+    
+    
+  </head>
+  <body style="background-image: url(./assets/bg-image.jpg)">
+    <div class="inner-content">
+      <div class="content">
+        <div id="intro">
+          <h1>Importante</h1>
+          <p>
+            Este no es un sitio de citas normal. Aquí envías un mensaje y
+            simplemente pides follar.
+          </p>
+          <p>
+            Tenemos 551 miembros a menos de 10 km de tu ubicación actual. Estos
+            miembros SOLO buscan encuentros sexuales casuales. ¡Actúa rápido!
+            Actualmente, hay una ventana de solo
+            <span id="countdown" style="font-family: urbanist, sans-serif"
+              >11 minutos y <strong>54 segundos</strong></span
+            >
+            para que los hombres se registren GRATIS. Solo necesitamos que
+            respondas tres preguntas sencillas para determinar tu elegibilidad
+            para nuestro sitio web exclusivo. ¡Buena suerte!
+          </p>
+          <button class="custom-button" onclick="showLoadingScreen()">
+            Continuar
+          </button>
+        </div>
+
+        <div id="loadingScreen" style="display: none">
+          <h2>El proceso de selección de perfil está cargando</h2>
+
+          <div class="progress-bar-area">
+            <div id="progress-bar"></div>
+          </div>
+
+          <ul style="display: none">
+            <li>Verificando si hay pases gratuitos disponibles.</li>
+            <li>Las inscripciones duplicadas están siendo revisadas.</li>
+            <li>Buscando opciones de registro gratuito.</li>
+          </ul>
+        </div>
+
+        <ul class="step-title">
+          <li id="stepItem1">
+            <h4>Edad</h4>
+            <img class="icon" src="./assets/icons/age.svg" alt="" />
+            <img class="selectedImage" src="" alt="" />
+          </li>
+          <li id="stepItem2">
+            <h4>Pelo</h4>
+            <img class="icon" src="./assets/icons/hair.png" alt="" />
+            <img class="selectedImage" src="" alt="" />
+          </li>
+          <li id="stepItem3">
+            <h4>Senos</h4>
+            <img class="icon" src="./assets/icons/boobs.png" alt="" />
+            <img class="selectedImage" src="" alt="" />
+          </li>
+          <li id="stepItem4">
+            <h4>Culo</h4>
+            <img class="icon" src="./assets/icons/ass.png" alt="" />
+            <img class="selectedImage" src="" alt="" />
+          </li>
+          <li id="stepItem5">
+            <h4>Profile</h4>
+            <img class="icon" src="./assets/icons/ass.png" alt="" />
+            <img class="selectedImage" src="" alt="" />
+          </li>
+        </ul>
+
+        <div id="steps">
+          <div id="step1" class="step" style="display: none">
+            <h2>
+              Elige el rango de edad que mejor coincida con tu pareja ideal.
+            </h2>
+
+            <div class="option-list">
+              <button
+                onclick="storeDataAndProceed({id: 1, img: './assets/images/20-30.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/20-30.png" alt="" />
+                </div>
+                <h4 class="name">20-30</h4>
+              </button>
+              <button
+                onclick="storeDataAndProceed({id: 2, img: './assets/images/30-40.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/30-40.png" alt="" />
+                </div>
+                <h4 class="name">30-40</h4>
+              </button>
+              <button
+                onclick="storeDataAndProceed({id: 3, img: './assets/images/50 +.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/50 +.png" alt="" />
+                </div>
+                <h4 class="name">50 +</h4>
+              </button>
+            </div>
+          </div>
+
+          <div id="step2" class="step" style="display: none">
+            <h2>
+              Por favor selecciona el color de cabello que te parezca atractivo
+            </h2>
+
+            <div class="option-list">
+              <button
+                onclick="storeDataAndProceed({id: 1, img: './assets/images/blonde/3.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/blonde/3.png" alt="" />
+                </div>
+                <h4 class="name">rubio</h4>
+              </button>
+              <button
+                onclick="storeDataAndProceed({id: 2, img: './assets/images/brunette/3.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/brunette/3.png" alt="" />
+                </div>
+                <h4 class="name">castaño</h4>
+              </button>
+              <button
+                onclick="storeDataAndProceed({id: 3, img: './assets/images/blackhead/3.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/blackhead/3.png" alt="" />
+                </div>
+                <h4 class="name">negro</h4>
+              </button>
+            </div>
+          </div>
+
+          <div id="step2" class="step" style="display: none">
+            <h2>
+              Por favor selecciona el color de cabello que te parezca atractivo
+            </h2>
+
+            <div class="option-list">
+              <button
+                onclick="storeDataAndProceed({id: 1, img: './assets/images/blonde/2.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/blonde/2.png" alt="" />
+                </div>
+                <h4 class="name">rubio</h4>
+              </button>
+              <button
+                onclick="storeDataAndProceed({id: 2, img: './assets/images/brunette/2.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/brunette/2.png" alt="" />
+                </div>
+                <h4 class="name">castaño</h4>
+              </button>
+              <button
+                onclick="storeDataAndProceed({id: 3, img: './assets/images/blackhead/2.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/blackhead/2.png" alt="" />
+                </div>
+                <h4 class="name">negro</h4>
+              </button>
+            </div>
+          </div>
+
+          <div id="step2" class="step" style="display: none">
+            <h2>
+              Por favor selecciona el color de cabello que te parezca atractivo
+            </h2>
+
+            <div class="option-list">
+              <button
+                onclick="storeDataAndProceed({id: 1, img: './assets/images/blonde/1.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/blonde/1.png" alt="" />
+                </div>
+                <h4 class="name">rubio</h4>
+              </button>
+              <button
+                onclick="storeDataAndProceed({id: 2, img: './assets/images/brunette/1.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/brunette/1.png" alt="" />
+                </div>
+                <h4 class="name">castaño</h4>
+              </button>
+              <button
+                onclick="storeDataAndProceed({id: 3, img: './assets/images/blackhead/1.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/blackhead/1.png" alt="" />
+                </div>
+                <h4 class="name">negro</h4>
+              </button>
+            </div>
+          </div>
+
+          <div id="step3" class="step" style="display: none">
+            <h2>
+              Por favor selecciona el rango de talla de busto que te atraiga.
+            </h2>
+
+            <div class="option-list">
+              <button
+                onclick="storeDataAndProceed({id: 1, img: './assets/images/small.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/small.png" alt="" />
+                </div>
+                <h4 class="name">Pequeño</h4>
+              </button>
+              <button
+                onclick="storeDataAndProceed({id: 2, img: './assets/images/medium.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/medium.png" alt="" />
+                </div>
+                <h4 class="name">Mediano</h4>
+              </button>
+              <button
+                onclick="storeDataAndProceed({id: 3, img: './assets/images/big.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/big.png" alt="" />
+                </div>
+                <h4 class="name">Grande</h4>
+              </button>
+            </div>
+          </div>
+
+          <div id="step4" class="step" style="display: none">
+            <h2>Por favor selecciona la figura que más te atraiga</h2>
+
+            <div class="option-list">
+              <button
+                onclick="storeDataAndProceed({id: 1, img: './assets/images/small ass.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/small ass.png" alt="" />
+                </div>
+                <h4 class="name">Pequeño</h4>
+              </button>
+              <button
+                onclick="storeDataAndProceed({id: 2, img: './assets/images/medium ass.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/medium ass.png" alt="" />
+                </div>
+                <h4 class="name">Mediano</h4>
+              </button>
+              <button
+                onclick="storeDataAndProceed({id: 3, img: './assets/images/big ass.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/big ass.png" alt="" />
+                </div>
+                <h4 class="name">Grande</h4>
+              </button>
+            </div>
+          </div>
+
+          <div id="step5" class="step profile" style="display: none">
+            <h2>
+              Basado en tu información, hemos preseleccionado 3 perfiles: por
+              favor selecciona tu perfil preferido o selecciona el perfil
+              misterioso
+            </h2>
+
+            <div class="option-list">
+              <button class="resultImage">
+                <div class="image">
+                  <img src="./assets/images/profile 1.png" alt="" />
+                </div>
+                <h4 class="name">Perfil 1</h4>
+              </button>
+              <button class="resultImage">
+                <div class="image">
+                  <img src="./assets/images/profile 2.png" alt="" />
+                </div>
+                <h4 class="name">Perfil 2</h4>
+              </button>
+              <button class="resultImage">
+                <div class="image">
+                  <img src="./assets/images/profile 3.png" alt="" />
+                </div>
+                <h4 class="name">Perfil 3</h4>
+              </button>
+              <button
+                onclick="storeDataAndProceed({id: 4, img: './assets/images/profile 4 mystery.png'})"
+              >
+                <div class="image">
+                  <img src="./assets/images/woman.jpeg" alt="" />
+                </div>
+                <h4 class="name">Perfil 4 / Misterio</h4>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="thankYouPage" style="display: none">
+          <h2>felicitaciones</h2>
+
+          <h3>¡ERES ELEGIBLE PARA NUESTRO SITIO!</h3>
+          <p>
+            Verificando nuestra base de datos para perfiles coincidentes. Basado
+            en tus respuestas, hay 216 miembros femeninos cerca de ti.
+          </p>
+
+          <h4>Estás aprobado para registrarte.</h4>
+
+          <h3>POR FAVOR, LEE NUESTRAS 3 REGLAS AHORA</h3>
+
+          <ul>
+            <li>
+              Si ves a alguien que conoces, ¡no estás permitido publicarlo! No
+              propagues rumores.
+            </li>
+
+            <li>
+              Al tener relaciones sexuales con uno de nuestros miembros, es TU
+              responsabilidad protegerte contra las ETS.
+            </li>
+
+            <li>
+              Respeta los deseos sexuales de otros miembros. Nuestras usuarias
+              son mujeres normales, no prostitutas ni estrellas del porno.
+            </li>
+          </ul>
+
+          <a
+            class="custom-button sticky-button"
+            id="continueButtonContainer"
+            onclick="
+            function getQueryParam(parameter) {
+              const queryString = window.location.search;
+              const urlParams = new URLSearchParams(queryString);
+              return urlParams.get(parameter);
+            }
+
+            document.getElementById('continueButtonContainer').setAttribute('href',urlfirst);
+            document.getElementById('continueButtonContainer').click();
+          "
+          >
+            ESTOY DE ACUERDO
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+  </body>
+</html>
